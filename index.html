@@ -7,7 +7,7 @@
 			
 			/* Basic CSS comment */	
 			body {
-				background: red;
+				background: purple;
 				color: white;
 				width: 960px;
 				margin: 0 auto;
@@ -17,13 +17,39 @@
 				font-size: 80px;
 				color: pink;
 			}
+			h3{
+			color: gray;
+			font-size:50px;}
+
+			p{
+			font-size:20px;}
 
 		</style>
+
+		<script>
+
+		var username = prompt("Ola, quem é você? Escreva seu apelido com a primeira letra maiúscula");
+
+		var adjetivo = Array("inteligente", "linda", "gostosa", "maravilhosa", "perfeita", "engraçada", "simpática", "forte");
+
+		var randomItem = adjetivo[Math.floor(Math.random(0,1,2,3,4,5,6,7)*adjetivo.length)];
+		
+		if(username=="Gi" || "Li" || "Lola" || "Maju" || "Carol"){
+		document.write("<h1>Olá " + username + ", você é " + randomItem + "!</h1>");
+		}
+
+		else {
+			document.write("<h1>Tchau, " + username + "!");
+		}
+
+		</script>
 
 	</head>
  	
 	<body>
-		<h1>Hello Ligia!</h1>
+		<h3> dê refresh (f5) na página mais vezes!! </h3>
+
+		<p> Feito com amor <3 por sua amiga Ju </p>
 	</body>
 
 </html>
